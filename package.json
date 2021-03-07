@@ -3,9 +3,12 @@
   "version": "1.0.0",
   "description": "Aplicacion recreativa que adivinara el personaje que piensas de la serie de peliculas de Toy Story",
   "scripts": {
-    
+    "start-electron": "electron ./src/main.js"
   },
   "keywords": [],
   "author": "Desarrolladores Web",
-  "license": "ISC"
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "12.0.0"
+  }
 }
