@@ -1,0 +1,39 @@
+.description {
+  font-size: 1.7rem;
+}
+.img-gaming > img {
+  width: 30rem;
+  height: 22rem;
+}
+.style-button {
+  background: #5daef9;
+  border: 1px solid #5daef9;
+  border-radius: 50px;
+  width: 30%;
+
+  padding: 1.2rem 0;
+  font-family: GFS Didot;
+  font-size: 1.5rem;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: 0.5s ease-in-out;
+}
+
+.style-button:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+@media screen and (max-width: 1000px) {
+  .img-gaming > img {
+    width: 20rem;
+    height: 22rem;
+  }
+}
+@media screen and (max-width: 769px) {
+  .img-gaming > img {
+    width: 30rem;
+    height: 22rem;
+  }
+}
