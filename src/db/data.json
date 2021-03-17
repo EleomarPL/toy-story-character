@@ -1,0 +1,367 @@
+[
+    {
+        "node": 1,
+        "questionText": "¿Es un juguete?",
+        "typeNode": 0
+    },
+    {
+        "node": 2,
+        "questionText": "¿Es juguete de Andy?",
+        "typeNode": 0
+    },
+    {
+        "node": 3,
+        "questionText": "¿Es humano?",
+        "typeNode": 0
+    },
+    {
+        "node": 4,
+        "questionText": "¿Es un juguete favorito de Andy?",
+        "typeNode": 0
+    },
+    {
+        "node": 5,
+        "questionText": "¿Es juguete de Molly?",
+        "typeNode": 0
+    },
+    {
+        "node": 6,
+        "questionText": "¿Es adulto?",
+        "typeNode": 0
+    },
+    {
+        "node": 7,
+        "questionText": "¿Es mascota de Andy?",
+        "typeNode": 0
+    },
+    {
+        "node": 8,
+        "questionText": "¿Tiene una serpiente en su bota?",
+        "typeNode": 0
+    },
+    {
+        "node": 9,
+        "questionText": "¿Pueden hablar?",
+        "typeNode": 0
+    },
+    {
+        "node": 10,
+        "questionText": "¿Es un animal?",
+        "typeNode": 0
+    },
+    {
+        "node": 11,
+        "questionText": "¿Es juguete de Sid?",
+        "typeNode": 0
+    },
+    {
+        "node": 12,
+        "questionText": "Es Sra Davis",
+        "typeNode": 1
+    },
+    {
+        "node": 13,
+        "questionText": "¿Es niño?",
+        "typeNode": 0
+    },
+    {
+        "node": 14,
+        "questionText": "Es Buster",
+        "typeNode": 1
+    },
+    {
+        "node": 15,
+        "questionText": "Es Scot",
+        "typeNode": 1
+    },
+    {
+        "node": 16,
+        "questionText": "Es Woody",
+        "typeNode": 1
+    },
+    {
+        "node": 17,
+        "questionText": "Es Buzz",
+        "typeNode": 1
+    },
+    {
+        "node": 18,
+        "questionText": "¿Estan dentro de un recipiente?",
+        "typeNode": 0
+    },
+    {
+        "node": 19,
+        "questionText": "¿Es un auto a control remoto?",
+        "typeNode": 0
+    },
+    {
+        "node": 20,
+        "questionText": "Es Billy, Goat, Groff",
+        "typeNode": 1
+    },
+    {
+        "node": 21,
+        "questionText": "¿Tiene un baston?",
+        "typeNode": 0
+    },
+    {
+        "node": 22,
+        "questionText": "¿Tiene patas de araña?",
+        "typeNode": 0
+    },
+    {
+        "node": 23,
+        "questionText": "¿Es juguete de Hanna?",
+        "typeNode": 0
+    },
+    {
+        "node": 26,
+        "questionText": "¿Es bueno?",
+        "typeNode": 0
+    },
+    {
+        "node": 27,
+        "questionText": "¿Esta niña es rubia?",
+        "typeNode": 0
+    },
+    {
+        "node": 36,
+        "questionText": "¿Son de color verde?",
+        "typeNode": 0
+    },
+    {
+        "node": 37,
+        "questionText": "¿Es musculoso?",
+        "typeNode": 0
+    },
+    {
+        "node": 38,
+        "questionText": "Es control",
+        "typeNode": 1
+    },
+    {
+        "node": 39,
+        "questionText": "¿Se parecen a un Huevo?",
+        "typeNode": 0
+    },
+    {
+        "node": 42,
+        "questionText": "Es Bo Peep",
+        "typeNode": 1
+    },
+    {
+        "node": 43,
+        "questionText": "Tu personajes es barbie",
+        "typeNode": 1
+    },
+    {
+        "node": 44,
+        "questionText": "Es Baby Face",
+        "typeNode": 1
+    },
+    {
+        "node": 45,
+        "questionText": "¿Tiene Mostacho?",
+        "typeNode": 0
+    },
+    {
+        "node": 46,
+        "questionText": "¿Tienen cabeza?",
+        "typeNode": 0
+    },
+    {
+        "node": 47,
+        "questionText": "¿Es juguete de Bonnie?",
+        "typeNode": 0
+    },
+    {
+        "node": 52,
+        "questionText": "Es Andy Davis",
+        "typeNode": 1
+    },
+    {
+        "node": 53,
+        "questionText": "Es Sid",
+        "typeNode": 1
+    },
+    {
+        "node": 54,
+        "questionText": "Es Molly",
+        "typeNode": 1
+    },
+    {
+        "node": 55,
+        "questionText": "Es Hanna",
+        "typeNode": 1
+    },
+    {
+        "node": 72,
+        "questionText": "Son los soldaditos",
+        "typeNode": 1
+    },
+    {
+        "node": 73,
+        "questionText": "Son los monos",
+        "typeNode": 1
+    },
+    {
+        "node": 74,
+        "questionText": "Es Rocky Gibraltar",
+        "typeNode": 1
+    },
+    {
+        "node": 75,
+        "questionText": "¿Es de color verde y manos pequeñas?",
+        "typeNode": 0
+    },
+    {
+        "node": 78,
+        "questionText": "Son los Troikas",
+        "typeNode": 1
+    },
+    {
+        "node": 79,
+        "questionText": "Es Lenny",
+        "typeNode": 1
+    },
+    {
+        "node": 90,
+        "questionText": "Es Carl Combate",
+        "typeNode": 1
+    },
+    {
+        "node": 91,
+        "questionText": "¿Tienen tres ojos y es color verde?",
+        "typeNode": 0
+    },
+    {
+        "node": 92,
+        "questionText": "Es muñeca de trapo quemado",
+        "typeNode": 1
+    },
+    {
+        "node": 93,
+        "questionText": "Es Maria Antonieta y su hermanita",
+        "typeNode": 1
+    },
+    {
+        "node": 94,
+        "questionText": "¿Tienen alas?",
+        "typeNode": 0
+    },
+    {
+        "node": 95,
+        "questionText": "¿Es juguete de Mason?",
+        "typeNode": 0
+    },
+    {
+        "node": 150,
+        "questionText": "Es Rex",
+        "typeNode": 1
+    },
+    {
+        "node": 151,
+        "questionText": "¿Es una alcancia?",
+        "typeNode": 0
+    },
+    {
+        "node": 182,
+        "questionText": "Son los marcianitos",
+        "typeNode": 1
+    },
+    {
+        "node": 183,
+        "questionText": "Es pato",
+        "typeNode": 1
+    },
+    {
+        "node": 188,
+        "questionText": "Angel Kitty",
+        "typeNode": 1
+    },
+    {
+        "node": 189,
+        "questionText": "Son los guisantes",
+        "typeNode": 1
+    },
+    {
+        "node": 190,
+        "questionText": "¿Utiliza un mazo de guerra?",
+        "typeNode": 0
+    },
+    {
+        "node": 191,
+        "questionText": "¿Es un peluche de color rosa?",
+        "typeNode": 0
+    },
+    {
+        "node": 302,
+        "questionText": "Es Hamm",
+        "typeNode": 1
+    },
+    {
+        "node": 303,
+        "questionText": "¿Tiene un cuerpo de resorte?",
+        "typeNode": 0
+    },
+    {
+        "node": 380,
+        "questionText": "Es Reptilus Maximus",
+        "typeNode": 1
+    },
+    {
+        "node": 381,
+        "questionText": "Es el clerigo",
+        "typeNode": 1
+    },
+    {
+        "node": 382,
+        "questionText": "Es Lotso Cariñoso",
+        "typeNode": 1
+    },
+    {
+        "node": 383,
+        "questionText": "¿Utiliza lentes?",
+        "typeNode": 0
+    },
+    {
+        "node": 606,
+        "questionText": "Es Slinky",
+        "typeNode": 1
+    },
+    {
+        "node": 607,
+        "questionText": "¿Tiene un corbatin rojo?",
+        "typeNode": 0
+    },
+    {
+        "node": 766,
+        "questionText": "Es Raygon",
+        "typeNode": 1
+    },
+    {
+        "node": 767,
+        "questionText": "Es Bebote",
+        "typeNode": 1
+    },
+    {
+        "node": 1214,
+        "questionText": "Es Wheezy",
+        "typeNode": 1
+    },
+    {
+        "node": 1215,
+        "questionText": "¿Es desmontable?",
+        "typeNode": 0
+    },
+    {
+        "node": 2430,
+        "questionText": "Es el Sr. cara de papa",
+        "typeNode": 1
+    },
+    {
+        "node": 2431,
+        "questionText": "Es Dolly, Patito y Teddy",
+        "typeNode": 1
+    }
+]

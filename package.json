@@ -8,7 +8,8 @@
     "build-prod": "webpack --mode production",
     "start-react": "webpack serve --mode=development",
     "test": "jest",
-    "start-electron": "electron ./src/main.js"
+    "start-electron": "electron ./src/main.js",
+    "create-db": "node ./src/db/createDatabase.js"
   },
   "keywords": [],
   "author": "Desarrolladores Web",
@@ -19,7 +20,8 @@
     "react": "17.0.1",
     "react-dom": "17.0.1",
     "react-helmet": "6.1.0",
-    "react-router-dom": "5.2.0"
+    "react-router-dom": "5.2.0",
+    "sqlite3": "5.0.2"
   },
   "devDependencies": {
     "@babel/core": "7.13.8",
