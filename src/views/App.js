@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { HashRouter, Switch, Route } from "react-router-dom";
 import { Helmet } from "react-helmet";
 
-import "bootstrap/dist/js/bootstrap.bundle";
+import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles/styles.css";
 import "animate.css";
@@ -12,6 +12,8 @@ import Navbar from "./components/NavBar";
 import Team from "./pages/Team";
 import About from "./pages/About";
 import Home from "./pages/Home";
+
+import { PlayAgainProvider } from "./context/PlayAgain";
 
 const App = () => {
   const [windowScrollY, updateWindowScroll] = useState(true);
@@ -56,7 +58,9 @@ const App = () => {
               <Helmet>
                 <title>Toy Story Character | Play</title>
               </Helmet>
-              <PlayPage />
+              <PlayAgainProvider>
+                <PlayPage />
+              </PlayAgainProvider>
             </Route>
           </Switch>
         </main>

@@ -3,6 +3,30 @@
   background-repeat: no-repeat;
   position: relative;
 }
+.character-text{
+  font-family: GFS Didot;
+  text-align: justify;
+  font-size: 2rem;
+  color: #1f91fa;
+}
+.button-play-again {
+  background: #5daef9;
+  border: 1px solid #5daef9;
+  border-radius: 20px;
+  padding: 1.2rem 5px;
+  font-family: GFS Didot;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: 0.5s ease-in-out;
+}
+
+.button-play-again:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
 .ellipse-woody1 {
   position: relative;
   width: 10vh;
