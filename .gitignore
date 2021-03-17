@@ -4,6 +4,7 @@
 coverage/
 *.log
 package-lock.json
+src/db/*.db
 
 # OS generated files
 .DS_Store

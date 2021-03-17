@@ -25,6 +25,12 @@ Instale las dependencias. Las depedencias ya se encuentran implicitas en el Pack
     npm i
 ```
 
+Después cree la base de datos, ejecutando la siguiente instrucción:
+
+```
+    npm run create-db
+```
+
 En desarrollo, que es la rama _main_, electron carga las vistas mediante un servidor. Por lo antes mencionado primero levante el servidor de react:
 
 ```
