@@ -1,7 +1,9 @@
+src/dist/
 /node_modules
 .cache/
 coverage/
 *.log
+src/db/*.db
 
 # OS generated files
 .DS_Store

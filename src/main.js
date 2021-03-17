@@ -1,4 +1,4 @@
-const { app, BrowserWindow, ipcMain } = require("electron");
+const { app, BrowserWindow, ipcMain, Menu } = require("electron");
 const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 
@@ -17,12 +17,18 @@ let db = new sqlite3.Database(path.join(app.getAppPath(), 'db', 'toystory.db'));
 let mainWindow = null;
 
 /**
+ * No se utilizara el menu por defecto que proporciona electron.
+ */
+Menu.setApplicationMenu(null);
+
+/**
  * La función createWindow crea una instancia de BrowserWindow, que configura la ventana para que sea
  * de 800 x 600 pixeles, y permite cargar (al establecer webPreferences.contextIsolation en true)
  * el archivo de configuración ./preload.js.
  */
 function createWindow() {
   mainWindow = new BrowserWindow({
+    show: false,
     width: 800,
     height: 600,
     webPreferences: {
@@ -30,12 +36,13 @@ function createWindow() {
       preload: path.resolve(app.getAppPath(), 'preload.js')
     },
   });
+  mainWindow.maximize();
   /**
    * Cuando la aplicación este en producción se cargara el archivo dist/index.html,
    * y durante el proceso de desarrollo se estará cargando el archivo desde localhost,
    * por el puerto 8080.
    */
-  // createWindow.loadFile(path.join(__dirname, "dist", "index.html"));
+  //mainWindow.loadFile(path.join(__dirname, "dist", "index.html"));
   mainWindow.loadURL("http://localhost:8080");
 }
 
