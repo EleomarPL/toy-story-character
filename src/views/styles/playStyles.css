@@ -1,0 +1,108 @@
+.img-woody {
+  height: 60vh;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.character-text{
+  font-family: GFS Didot;
+  text-align: justify;
+  font-size: 2rem;
+  color: #1f91fa;
+}
+.button-play-again {
+  background: #5daef9;
+  border: 1px solid #5daef9;
+  border-radius: 20px;
+  padding: 1.2rem 5px;
+  font-family: GFS Didot;
+  font-size: 1.6rem;
+  text-align: center;
+  color: #ffffff;
+  text-decoration: none;
+
+  transition: 0.5s ease-in-out;
+}
+
+.button-play-again:hover {
+  color: #ffffff;
+  transform: scale(1.1);
+}
+.ellipse-woody1 {
+  position: relative;
+  width: 10vh;
+  bottom: 0.8rem;
+  left: 1.5rem;
+  background-repeat: no-repeat;
+  transform: rotateX(30deg);
+}
+.ellipse-woody2 {
+  position: relative;
+  bottom: 0.4rem;
+  left: 1.9rem;
+  width: 8vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transform: rotateX(30deg);
+}
+.background-shadow {
+  position: relative;
+  width: 100%;
+  bottom: 1rem;
+  background: url("../img/ellipse.svg");
+  width: 29vh;
+  height: 30px;
+  background-position: center;
+  overflow: visible;
+  background-repeat: no-repeat;
+  border-radius: 100px;
+  transform: rotateX(40deg);
+}
+.text-box-question {
+  font-family: GFS Neohellenic, Arial, Helvetica, sans-serif;
+
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #1f91fa;
+}
+.answer {
+  margin-bottom: 0.7rem;
+  font-family: GFS Didot, Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+
+  text-decoration: none;
+
+  color: #6c6767;
+  border: 1px solid #6c6767;
+  box-sizing: border-box;
+  border-radius: 15px;
+  border-radius: 15px;
+  width: 70%;
+
+  transition: 0.5s ease-in-out;
+}
+.answer:hover {
+  background: #5daef9;
+  border: 1px solid #5daef9;
+  color: #ffffff;
+  transform: scale(1.1);
+}
+
+@media screen and (max-width: 600px) {
+  .play {
+    justify-content: center;
+  }
+  .section-question {
+    width: 80%;
+    position: absolute;
+    top: 10rem;
+    z-index: 1;
+  }
+  .section-woody {
+    width: 80%;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+  }
+}
