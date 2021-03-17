@@ -16,6 +16,10 @@ const CardContact = ({ name, data }) => {
             <p className="text-center text-white">{name}</p>
           </div>
           <div className="d-flex justify-content-center icons">
+            {/* 
+              Se llama al componente ContactMember que será el que 
+              renderize la imagen correspondiente  
+            */}
             {Object.keys(data).map((key) => (
               <ContacMember key={key} name={key} href={data[key]} />
             ))}

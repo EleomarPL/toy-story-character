@@ -6,7 +6,9 @@ import Instagram from "../img/instagram.svg";
 
 const ContacMember = (props) => {
   let srcImage = undefined;
-
+  /* 
+    Renderizar la imagen en base a los parámetros recibidos
+  */
   switch (props.name) {
     case "github":
       srcImage = GitHub;

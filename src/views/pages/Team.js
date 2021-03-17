@@ -7,6 +7,12 @@ const Team = () => {
   return (
     <div className="bg-light rounded-3 mb-3 container pb-4 animate__animated animate__backInLeft">
       <p className="subtitle-font">¿Quiénes construyeron esta aplicación?</p>
+      {/* Llamar al componente CardContac recibiendo solo 3 parámetros
+        **** github
+        **** facebook
+        **** instagram
+        Se pueden omitir pero no agregar mas, ya que seran ignorados
+       */}
       <CardContact
         name="Eleomar Pedro Lorenzo"
         data={{

@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 
 import woody from "../img/woodyRender.svg";
 import ellipse from "../img/ellipse.svg";
@@ -10,11 +10,17 @@ import ContextPlayAgain from "../context/PlayAgain";
 const PlayPage = () => {
   const { isPlayAgain, setPlayAgain } = useContext(ContextPlayAgain);
 
+  useEffect(() => {
+    return () => {};
+    // return () => {
+    // setPlayAgain(false);
+    // };
+  }, [isPlayAgain]);
+
   const playAgainNow = () => {
     setPlayAgain(false);
   };
 
-  console.log(isPlayAgain);
   return (
     <div className="play d-flex flex-wrap container col-md-12 animate__animated animate__backInLeft">
       <section className="section-question bg-light rounded-3 col-md-4">
@@ -28,7 +34,7 @@ const PlayPage = () => {
         </article>
       </section>
       <section className="m-auto d-flex">
-        {isPlayAgain && (
+        {isPlayAgain !== undefined && isPlayAgain && (
           <button className="button-play-again mt-2" onClick={playAgainNow}>
             Jugar otra vez
           </button>

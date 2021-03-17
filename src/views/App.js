@@ -17,6 +17,8 @@ import { PlayAgainProvider } from "./context/PlayAgain";
 
 const App = () => {
   const [windowScrollY, updateWindowScroll] = useState(true);
+
+  //cambio de color de encabezado de navegación
   useEffect(() => {
     let documentMain = document.getElementById("main-document");
     documentMain.addEventListener("scroll", () => {
@@ -35,34 +37,35 @@ const App = () => {
       <div className="main-window overflow-auto" id="main-document">
         <Navbar />
         <main className="main-sections">
-          <Switch>
-            <Route exact path="/">
-              <Helmet>
-                <title>Toy Story Character</title>
-              </Helmet>
-              <Home />
-            </Route>
-            <Route path="/about">
-              <Helmet>
-                <title>Toy Story Character | About</title>
-              </Helmet>
-              <About />
-            </Route>
-            <Route path="/team">
-              <Helmet>
-                <title>Toy Story Character | Team</title>
-              </Helmet>
-              <Team />
-            </Route>
-            <Route path="/play">
-              <Helmet>
-                <title>Toy Story Character | Play</title>
-              </Helmet>
-              <PlayAgainProvider>
+          {/* Rutas a cargar en base a la navegacion  */}
+          <PlayAgainProvider>
+            <Switch>
+              <Route exact path="/">
+                <Helmet>
+                  <title>Toy Story Character</title>
+                </Helmet>
+                <Home />
+              </Route>
+              <Route path="/about">
+                <Helmet>
+                  <title>Toy Story Character | About</title>
+                </Helmet>
+                <About />
+              </Route>
+              <Route path="/team">
+                <Helmet>
+                  <title>Toy Story Character | Team</title>
+                </Helmet>
+                <Team />
+              </Route>
+              <Route path="/play">
+                <Helmet>
+                  <title>Toy Story Character | Play</title>
+                </Helmet>
                 <PlayPage />
-              </PlayAgainProvider>
-            </Route>
-          </Switch>
+              </Route>
+            </Switch>
+          </PlayAgainProvider>
         </main>
       </div>
     </HashRouter>
