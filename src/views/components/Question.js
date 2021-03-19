@@ -83,6 +83,11 @@ const Question = () => {
   */
 
   useEffect(() => {
+    /*
+      Se establece el valor del contexto en falso, indicando que no se renderize el botón
+      de jugar otra vez
+    */
+    setPlayAgain(false);
     /* 
       Enviar nodo mediante el puente generada en la precarga de electron
       Además inicializa el juego
