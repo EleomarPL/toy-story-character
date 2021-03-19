@@ -3,12 +3,17 @@ const path = require('path');
 const sqlite3 = require('sqlite3').verbose();
 
 /**
+ * No muestra carga el programa durante la instalación o desinstalación
+ */
+ if (require('electron-squirrel-startup')) return app.quit();
+
+/**
  * Este proyecto utiliza sqlite como manejador de base datos. El modulo que proporciona acceso a la API
  * de sqlite es sqlite3 (nombre registrado en npm).
  * Para abrir una conexión con la base de datos ./db/toystory.db debemos crear un objeto Database,
  * para esto pasamos la ruta de la base datos al constructor.
  */
-let db = new sqlite3.Database(path.join(app.getAppPath(), 'db', 'toystory.db'));
+let db = new sqlite3.Database(path.join(__dirname, 'db', 'toystory.db'));
 
 /**
  * mainWindow, almacenara la referencia a un objeto BrowserWindow, la ventana que será el proceso de
@@ -33,7 +38,7 @@ function createWindow() {
     height: 600,
     webPreferences: {
       contextIsolation: true,
-      preload: path.resolve(app.getAppPath(), 'preload.js')
+      preload: path.resolve(__dirname, 'preload.js')
     },
   });
   mainWindow.maximize();
@@ -42,8 +47,8 @@ function createWindow() {
    * y durante el proceso de desarrollo se estará cargando el archivo desde localhost,
    * por el puerto 8080.
    */
-  //mainWindow.loadFile(path.join(__dirname, "dist", "index.html"));
-  mainWindow.loadURL("http://localhost:8080");
+  mainWindow.loadFile(path.join(__dirname, "dist", "index.html"));
+  //mainWindow.loadURL("http://localhost:8080");
 }
 
 /**

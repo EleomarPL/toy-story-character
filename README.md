@@ -25,21 +25,40 @@ Instale las dependencias. Las depedencias ya se encuentran implicitas en el Pack
     npm i
 ```
 
-En desarrollo, que es la rama _main_, electron carga las vistas mediante un servidor. Por lo antes mencionado primero levante el servidor de react:
-
-```
-    npm run start-react
-```
-
-Una vez levantado y comprobado el funcionamiento del servidor para las vistas, se ejecuta la siguiente instrucción:
-
-```
-    npm run start-electron
-```
-
 ## Despliegue 📦
 
-En el proyecto se encuentra la rama Production, y dentro de esta se encuentra el proyecto listo para producción, de nada.
+Para generar el instalador del proyecto, sigua las siguientes instrucciones:
+
+1. Muevase a la rama _react_ y ejecute el script:
+
+```
+    npm run build-prod
+```
+
+2. Muevase a la rama _electron_ y ejecute el script:
+
+```
+    npm run create-db
+```
+
+3. Muevase a la rama _production_ y ejecute el script:
+
+```
+    npm install -g node-gyp
+```
+4. Instale el entorno para Visual C++: instalando ya sea [Visual Studio Build Tools](hhttps://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=BuildTools&rel=16) (usando la carga de trabajo "Visual C++ build tools") o [Visual Studio 2019 Community](https://visualstudio.microsoft.com/es/thank-you-downloading-visual-studio/?sku=Community&rel=16) (usando la carga de trabajo "Desktop Development with C++")
+
+5. Inicie cmd y ejecute:
+
+```
+    npm config set msvs_version 2019
+```
+
+6. Y por ultimo, ejecute el siguiente script, para generar el instalador del proyecto (que será generado en la carpeta out):
+
+```
+    npm run make
+```
 
 ## Construido con 🛠️
 

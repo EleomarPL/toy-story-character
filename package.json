@@ -1,18 +1,53 @@
 {
   "name": "toy-story-character",
+  "main": "src/main.js",
   "version": "1.0.0",
   "description": "Aplicacion recreativa que adivinara el personaje que piensas de la serie de peliculas de Toy Story",
   "scripts": {
-    "start-electron": "electron ./src/main.js",
-    "create-db": "node ./src/db/createDatabase.js"
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make"
   },
   "keywords": [],
   "author": "Desarrolladores Web",
   "license": "ISC",
   "dependencies": {
+    "electron-squirrel-startup": "1.0.0",
     "sqlite3": "5.0.2"
   },
   "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.54",
+    "@electron-forge/maker-deb": "^6.0.0-beta.54",
+    "@electron-forge/maker-rpm": "^6.0.0-beta.54",
+    "@electron-forge/maker-squirrel": "^6.0.0-beta.54",
+    "@electron-forge/maker-zip": "^6.0.0-beta.54",
     "electron": "12.0.0"
+  },
+  "config": {
+    "forge": {
+      "packagerConfig": {},
+      "makers": [
+        {
+          "name": "@electron-forge/maker-squirrel",
+          "config": {
+            "name": "toy_story_character"
+          }
+        },
+        {
+          "name": "@electron-forge/maker-zip",
+          "platforms": [
+            "darwin"
+          ]
+        },
+        {
+          "name": "@electron-forge/maker-deb",
+          "config": {}
+        },
+        {
+          "name": "@electron-forge/maker-rpm",
+          "config": {}
+        }
+      ]
+    }
   }
 }
