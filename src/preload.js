@@ -29,6 +29,11 @@ contextBridge.exposeInMainWorld(
             if(validChannels.includes(channel)) {
                 ipcRenderer.on(channel, callback);
             }
+        },
+        removeAllListeners: (channel) => {
+            if(validChannels.includes(channel)) {
+                ipcRenderer.removeAllListeners(channel);
+            }
         }
     }
 );
