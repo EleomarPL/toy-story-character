@@ -74,7 +74,7 @@ const Question = () => {
     node: null,
     isFirstTime: true,
   });
-  const [numberQuestion, updateNumberQuestion] = useState(1);
+  const [numberQuestion, updateNumberQuestion] = useState(0);
 
   /*
     Sección de "useEffect", hook de React para permitir llevar a cabo efectos 
@@ -89,26 +89,19 @@ const Question = () => {
     */
     setPlayAgain(false);
     /* 
-      Enviar nodo mediante el puente generada en la precarga de electron
-      Además inicializa el juego
-    */
-    electron.send("get:node", 1);
-    /* 
       Escuchar cambios de parte del proceso principal de electron 
     */
-
     electron.on("send:data", (err, message) => {
-      if (message.node !== nodeQuestion.node)
-        updateNumberQuestion((prev) => prev + 1);
-
+      updateNumberQuestion((prev) => prev + 1);
       if (message.typeNode === 1) setPlayAgain(true);
-
       updateNodeQuestion({ ...message });
     });
+    /*
+      Eliminar el listener para el evento send:data, al desmontar el componente
+      del DOM.
+    */
     return () => {
-      updateNodeQuestion({
-        numQuestion: 1,
-      });
+      electron.removeAllListeners('send:data');
     };
   }, []);
   /*
@@ -117,12 +110,16 @@ const Question = () => {
   */
   useEffect(() => {
     if (!isPlayAgain) {
-      updateNumberQuestion(1);
+      updateNumberQuestion(0);
       updateTemporallyNode({
         ...temporallyNode,
         node: null,
         isFirstTime: true,
       });
+      /* 
+        Enviar nodo mediante el puente generada en la precarga de electron
+        Además inicializa el juego
+      */
       electron.send("get:node", 1);
     }
   }, [isPlayAgain]);
