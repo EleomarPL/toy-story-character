@@ -10,13 +10,6 @@ import ContextPlayAgain from "../context/PlayAgain";
 const PlayPage = () => {
   const { isPlayAgain, setPlayAgain } = useContext(ContextPlayAgain);
 
-  useEffect(() => {
-    return () => {};
-    // return () => {
-    // setPlayAgain(false);
-    // };
-  }, [isPlayAgain]);
-
   const playAgainNow = () => {
     setPlayAgain(false);
   };
