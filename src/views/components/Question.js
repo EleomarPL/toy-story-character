@@ -127,7 +127,6 @@ const Question = () => {
   /*
     Cargar respuestas en base a la interacción del usuario
   */
-
   useEffect(() => {
     updateTemporallyNode({
       ...temporallyNode,
@@ -137,6 +136,7 @@ const Question = () => {
           : ["Si", "No", "Probablemente si", "Probablemente no"],
     });
   }, [temporallyNode.node]);
+
   return (
     <Fragment>
       <p className="text-box-question">{numberQuestion}</p>
